@@ -29,7 +29,11 @@ class ViewController: UIViewController {
 //
 //        bgImg.frame = view.frame
         
-        
+    }
+    
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
+        //this function will make it go back to the previous screen
+        //the paremeter name doesn't matter (unwindSegue), it's just important to have it there and have it be of type UIStoryboardSegue
     }
 
 

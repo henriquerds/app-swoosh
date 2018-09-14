@@ -9,15 +9,16 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
-    //The following is the way to do pixel perfect designs instead of auto-layout
     
-    @IBOutlet weak var swoosh: UIImageView!
-    @IBOutlet weak var bgImg: UIImageView!
+//    @IBOutlet weak var swoosh: UIImageView!
+//    @IBOutlet weak var bgImg: UIImageView!
+//    by deleting the outlets above - because we don't need them anymore - we are causing a crash
+//    to avoid said crash, we need to go into the main storyboard where this is taking place, right click the view controller and delete the outlets there as well
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        The following is the way to do pixel perfect designs instead of auto-layout
         
 //        swoosh.frame = CGRect(x: view.frame.size.width / 2 - swoosh.frame.size.width / 2, y: 50, width: swoosh.frame.size.width, height: swoosh.frame.size.height)
 //

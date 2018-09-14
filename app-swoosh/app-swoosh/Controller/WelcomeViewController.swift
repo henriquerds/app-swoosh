@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     //The following is the way to do pixel perfect designs instead of auto-layout
     

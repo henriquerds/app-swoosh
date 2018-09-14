@@ -126,6 +126,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="Mdj-Xn-zfC" eventType="touchUpInside" id="bnC-hJ-U0d"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Y1y-Bv-c1C">
                                 <rect key="frame" x="20" y="165" width="335" height="180"/>
@@ -197,6 +200,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OsA-B2-aUZ"/>
                     </view>
+                    <connections>
+                        <segue destination="0KP-QV-J64" kind="show" identifier="skillViewControllerSegue" id="JJP-YN-0Kb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvX-o4-rps" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gOs-34-hdd" userLabel="Exit" sceneMemberID="exit"/>
@@ -270,9 +276,19 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TF-jl-ijm">
+                                <rect key="frame" x="20" y="37" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="1MY-6E-JG9"/>
+                                    <constraint firstAttribute="width" constant="29" id="Vc3-hZ-VKi"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="1TF-jl-ijm" firstAttribute="top" secondItem="xCe-PC-rQw" secondAttribute="top" constant="17" id="1Sn-C5-UJX"/>
+                            <constraint firstItem="1TF-jl-ijm" firstAttribute="leading" secondItem="xCe-PC-rQw" secondAttribute="leading" constant="20" id="1Vj-f6-cZC"/>
                             <constraint firstItem="1IF-Cg-mdX" firstAttribute="top" secondItem="a7Q-9R-esN" secondAttribute="bottom" constant="50" id="2cX-LH-Y9S"/>
                             <constraint firstItem="a7Q-9R-esN" firstAttribute="top" secondItem="xCe-PC-rQw" secondAttribute="top" constant="20" id="6B8-UG-8qe"/>
                             <constraint firstItem="xCe-PC-rQw" firstAttribute="trailing" secondItem="bXl-js-naD" secondAttribute="trailing" constant="20" id="93z-3Z-VtK"/>

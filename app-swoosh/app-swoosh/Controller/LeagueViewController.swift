@@ -10,10 +10,13 @@ import UIKit
 
 class LeagueViewController: UIViewController {
 
+    @IBAction func onNextTapped(_ sender: Any) {
+        performSegue(withIdentifier: "skillViewControllerSegue", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 

@@ -45,8 +45,8 @@
 			isa = PBXGroup;
 			children = (
 				BEEFED22214B17410039356D /* WelcomeViewController.swift */,
-				BE715B3B214C6B3F0059CB52 /* LeagueViewController.swift */,
 				BE715B3D214C6B500059CB52 /* SkillViewController.swift */,
+				BE715B3B214C6B3F0059CB52 /* LeagueViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

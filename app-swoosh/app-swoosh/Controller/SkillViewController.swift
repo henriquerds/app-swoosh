@@ -9,11 +9,17 @@
 import UIKit
 
 class SkillViewController: UIViewController {
-
+    
+    var player: Player!
+    //the ! means that no matter what there has to be code in this when this view loads
+    //this ALWAYS needs to come before viewDidLoad to guarantee that it will have a var, so that we don't print a nill
+    @IBOutlet weak var selectionLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        selectionLbl.text = "Option selected: " + player.desiredLeague
+        print(player.desiredLeague)
     }
     
 
